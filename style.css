@@ -18,3 +18,35 @@ section{
     padding: 0;
     margin-bottom: 1rem;
 }
+
+.nav-link {
+    position: relative;
+    padding: 0.5rem 1rem;
+    transition: color 0.3s ease-in-out;
+}
+.nav-link::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 3px;
+    background-color: #c9dabf;
+    transition: width 0.3s ease-in-out;
+}
+.nav-link:hover::after {
+    width: 100%;
+}
+
+#gallery img {
+    transition: transform 0.2s ease;
+}
+#gallery img:hover {
+    transform: scale(1.05);
+}
+.card {
+    transition: transform 0.2s ease;
+}
+.card:hover {
+    transform: scale(1.05);
+}
